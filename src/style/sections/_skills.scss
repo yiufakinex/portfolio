@@ -1,0 +1,166 @@
+#skills {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  padding-top: 8%;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  padding-bottom: 15%;
+
+  @include respond(tab-land) {
+    padding: 10% 0;
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  @include respond(phone) {
+    padding-top: 18%;
+  }
+
+  .skills-wrapper {
+    @include respond(phone) {
+      padding-bottom: 2rem;
+    }
+
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(tab-port) {
+        padding-bottom: 6.4rem;
+      }
+      @include respond(tab-land) {
+        height: 100%;
+      }
+
+      .burger-wrapper {
+
+        .burger-overlay {
+          position:absolute;
+          top: 0;
+          height: 316px;
+          width: 350px;
+          cursor: pointer;
+          z-index: 3;
+
+          .top-overlay {
+            z-index: 6;
+            width: 100%;
+            height: 40%;
+          }
+          .mid-overlay {
+            z-index: 6;
+            width: 100%;
+            height: 35%;
+          }
+          .bot-overlay {
+            z-index: 6;
+            width: 100%;
+            height: 25%;
+          }
+        }
+      }
+
+    }
+
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      @include respond(phone) {
+        align-items: center;
+        margin-top: -2rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+
+        .small {
+          font-size: 1.5rem;
+        }
+      }
+
+      .skill-list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include respond(phone) {
+          justify-content: center;
+        }
+
+        .ind-skill {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.6rem;
+          margin: 1.5rem;
+
+          @include respond(phone) {
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 40%;
+            align-items: flex-end;
+          }
+
+          .skill-img-container {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            padding-bottom: 1rem;
+
+            @include respond(phone) {
+              padding-bottom: 0;
+              padding-right: 1rem;
+            }
+          }
+        }
+
+      }
+
+      &-text {
+        text-align: left;
+        font-size: 1.8rem;
+
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        &--important {
+          background: darken($secondary-color, 1%);
+          display: inline-block;
+          font-style: italic;
+          padding: 0 0.3rem;
+          margin: 0.3rem 0;
+          line-height: 1.6;
+
+          @include respond(phone) {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}
