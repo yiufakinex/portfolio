@@ -245,7 +245,7 @@ export const aboutData = {
     'In 2023, I took a leap and trained in modern app development at Fullstack Academy. I quickly absorbed new concepts, while bringing ambitious ideas and a positive attitude to every challenge.',
   paragraphThree:
     "When I'm not coding, I enjoy outdoor activities like baseball, snowboarding and hiking, testing new recipes, or writing musical parodies on my guitar.",
-  resume: 'https://docs.google.com/document/d/1Ymk8y2eeROQg0S0Slz-ESlkmGvwKZt6YceTfTD09kyE/edit?usp=drive_link', 
+  resume: 'https://drive.google.com/file/d/151C5TWrmDN0uqMENonRpEexLpEHBJaEP/view', 
 //linkedin: 'https://www.linkedin.com/in/franklin-you-can-do-it',
   github: 'https://github.com/yiufakinex',
   leetcode: '', // if no resume, the button will not show up
